@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#66788f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="65" y="67" font-family="Microsoft YaHei UI, sans-serif" font-size="38" font-weight="700" fill="#20334b">记忆主流程：一次交互如何影响下一次回答</text>
+<text x="65" y="115" font-family="Microsoft YaHei UI, sans-serif" font-size="25" font-weight="400" fill="#5d7087">保留经历、提炼长期经验、调整检索权重，是三个不同动作。</text>
+<polyline points="570,260 650,260" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1150,260 1230,260" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1480,340 1480,495" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1230,575 1150,575" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="650,575 570,575" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="70,575 35,575 35,260 70,260" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="180" width="500" height="160" rx="14" fill="#eef2f6" stroke="#c7d4e2"/>
+<text x="92" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">1  对话与执行</text>
+<text x="92" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">用户输入、回答、工具执行轨迹</text>
+<text x="92" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">保留本轮实际使用的证据</text>
+<rect x="650" y="180" width="500" height="160" rx="14" fill="#f0ecff" stroke="#c7d4e2"/>
+<text x="672" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">2  会话记忆</text>
+<text x="672" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">保存问答和反馈</text>
+<text x="672" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">近期历史 + 语义召回 + 指导</text>
+<rect x="1230" y="180" width="500" height="160" rx="14" fill="#fff4d9" stroke="#c7d4e2"/>
+<text x="1252" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">3  触发改进</text>
+<text x="1252" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">显式执行，或写入时触发</text>
+<text x="1252" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">检查开关、阈值与已处理水位</text>
+<rect x="1230" y="495" width="500" height="160" rx="14" fill="#f0ecff" stroke="#c7d4e2"/>
+<text x="1252" y="538" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">4  筛选长期经验</text>
+<text x="1252" y="578" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">过滤不可靠指导，归并重复经验</text>
+<text x="1252" y="611" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">检查是否新颖、持久且有依据</text>
+<rect x="650" y="495" width="500" height="160" rx="14" fill="#eaf2ff" stroke="#c7d4e2"/>
+<text x="672" y="538" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">5  进入知识底座</text>
+<text x="672" y="578" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">经验作为文档再次入库建图</text>
+<text x="672" y="611" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">问答归档与反馈更新单独处理</text>
+<rect x="70" y="495" width="500" height="160" rx="14" fill="#e8f5ef" stroke="#c7d4e2"/>
+<text x="92" y="538" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">6  改善后续回答</text>
+<text x="92" y="578" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">新知识可跨会话检索</text>
+<text x="92" y="611" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">反馈改变证据权重</text>
+<text x="70" y="800" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">会话保存成功 ≠ 长期经验已发布。需要等待对应后台任务成功，或显式执行改进。</text>
+<text x="70" y="850" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">自动改进的时间阈值在下一次写入时检查，不是一个到点必然执行的后台定时器。</text>
+<text x="70" y="900" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">反馈调权不会重新训练基础模型；它改变以后选择哪些证据、以什么顺序使用证据。</text>
+<text x="65" y="1075" font-family="Microsoft YaHei UI, sans-serif" font-size="20" font-weight="400" fill="#718198">Cognee 1.6.0 · 主流程示意 · 默认能力与可选能力见正文</text>
+</svg>

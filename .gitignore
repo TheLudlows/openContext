@@ -1,0 +1,9 @@
+/target/
+/.cache/
+/.local/
+/.env
+*.log
+*.pid
+/.data/
+.idea/
+docs/.target/

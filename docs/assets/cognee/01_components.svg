@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1150" viewBox="0 0 1800 1150">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#66788f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="65" y="67" font-family="Microsoft YaHei UI, sans-serif" font-size="38" font-weight="700" fill="#20334b">组件架构：知识与记忆共用检索底座</text>
+<text x="65" y="115" font-family="Microsoft YaHei UI, sans-serif" font-size="25" font-weight="400" fill="#5d7087">框内是逻辑组件，不代表独立微服务；连线展示主要数据流。</text>
+<polyline points="760,285 760,325 320,325 320,365" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="365" y="318" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">资料</text>
+<polyline points="900,285 900,365" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="915" y="335" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">提问</text>
+<polyline points="1040,285 1040,325 1480,325 1480,365" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1240" y="318" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">对话 / 反馈</text>
+<polyline points="320,525 320,680" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="335" y="604" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">运行与来源</text>
+<polyline points="460,525 460,615 790,615 790,680" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="515" y="601" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">知识产物</text>
+<polyline points="900,680 900,525" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="920" y="602" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">证据</text>
+<polyline points="1480,525 1480,680" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1500" y="604" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">读写状态</text>
+<polyline points="1230,435 1150,435" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1165" y="421" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">会话</text>
+<rect x="650" y="165" width="500" height="120" rx="14" fill="#eef2f6" stroke="#c7d4e2"/>
+<text x="672" y="208" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">应用 / Agent</text>
+<text x="672" y="248" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">提交资料、记录会话、提问、反馈</text>
+<rect x="70" y="365" width="500" height="160" rx="14" fill="#eaf2ff" stroke="#c7d4e2"/>
+<text x="92" y="408" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">知识加工</text>
+<text x="92" y="448" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">解析 → 分块 → 抽取关系与摘要</text>
+<text x="92" y="481" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">产物：原文块、实体、事实、来源</text>
+<rect x="650" y="365" width="500" height="160" rx="14" fill="#e8f5ef" stroke="#c7d4e2"/>
+<text x="672" y="408" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">检索与上下文组装</text>
+<text x="672" y="448" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">选择会话 / 知识范围，召回证据</text>
+<text x="672" y="481" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">排序 → 组装上下文 → 生成答案</text>
+<rect x="1230" y="365" width="500" height="160" rx="14" fill="#f0ecff" stroke="#c7d4e2"/>
+<text x="1252" y="408" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">记忆管理与改进</text>
+<text x="1252" y="448" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">保存问答、指导和反馈</text>
+<text x="1252" y="481" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">筛选长期经验，再进入知识加工</text>
+<rect x="70" y="680" width="500" height="160" rx="14" fill="#eef2f6" stroke="#c7d4e2"/>
+<text x="92" y="723" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">控制与原始资料</text>
+<text x="92" y="763" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">用户 / 数据集 / 任务状态</text>
+<text x="92" y="796" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">关系库 + 文件或对象存储</text>
+<rect x="650" y="680" width="500" height="160" rx="14" fill="#e8f5ef" stroke="#c7d4e2"/>
+<text x="672" y="723" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">图存储 + 向量索引</text>
+<text x="672" y="763" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">图：结构、事实、来源归属</text>
+<text x="672" y="796" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">向量：文本、摘要、实体、事实</text>
+<rect x="1230" y="680" width="500" height="160" rx="14" fill="#f0ecff" stroke="#c7d4e2"/>
+<text x="1252" y="723" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">会话状态</text>
+<text x="1252" y="763" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">问答、指导、轨迹、处理水位</text>
+<text x="1252" y="796" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">缓存适配器；问答另有向量索引</text>
+<text x="70" y="915" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">跨组件能力：授权与数据集范围、任务编排、LLM / Embedding 网关、来源追踪。</text>
+<text x="70" y="961" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">长期经验回流到“知识加工”；答案引用的证据 ID 回流到“记忆管理”，用于反馈。</text>
+<text x="70" y="1007" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">默认并非图库与向量库的跨库事务；图中存储框表示接口职责，不限定数据库产品。</text>
+<text x="65" y="1125" font-family="Microsoft YaHei UI, sans-serif" font-size="20" font-weight="400" fill="#718198">Cognee 1.6.0 · 主流程示意 · 默认能力与可选能力见正文</text>
+</svg>

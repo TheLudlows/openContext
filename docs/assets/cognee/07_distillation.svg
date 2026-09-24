@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1150" viewBox="0 0 1800 1150">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#66788f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="65" y="67" font-family="Microsoft YaHei UI, sans-serif" font-size="38" font-weight="700" fill="#20334b">长期经验提炼：从对话记录到可复用知识</text>
+<text x="65" y="115" font-family="Microsoft YaHei UI, sans-serif" font-size="25" font-weight="400" fill="#5d7087">主流程含两次判断：先判断候选是否可靠，再判断生成的经验是否值得发布。</text>
+<polyline points="570,260 650,260" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1150,260 1230,260" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1480,340 1480,510" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1230,590 1150,590" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="650,590 570,590" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="180" width="500" height="160" rx="14" fill="#fff4d9" stroke="#c7d4e2"/>
+<text x="92" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">1  筛选指导候选</text>
+<text x="92" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">有效、置信度达标</text>
+<text x="92" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">净帮助度不为负；存在新候选</text>
+<rect x="650" y="180" width="500" height="160" rx="14" fill="#f0ecff" stroke="#c7d4e2"/>
+<text x="672" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">2  结合完整经历</text>
+<text x="672" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">问答时间线 + 合格指导</text>
+<text x="672" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">归并为有依据的经验提案</text>
+<rect x="1230" y="180" width="500" height="160" rx="14" fill="#eaf2ff" stroke="#c7d4e2"/>
+<text x="1252" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">3  查已有知识</text>
+<text x="1252" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">检索相似经验</text>
+<text x="1252" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">检索实体名称，统一用词</text>
+<rect x="1230" y="510" width="500" height="160" rx="14" fill="#f0ecff" stroke="#c7d4e2"/>
+<text x="1252" y="553" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">4  审核与撰写</text>
+<text x="1252" y="593" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">拒绝已知、短期或无依据内容</text>
+<text x="1252" y="626" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">输出陈述及学习原因</text>
+<rect x="650" y="510" width="500" height="160" rx="14" fill="#e8f5ef" stroke="#c7d4e2"/>
+<text x="672" y="553" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">5  发布经验文档</text>
+<text x="672" y="593" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">进入统一的资料入库与建图流程</text>
+<text x="672" y="626" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">使其可在后续会话被检索</text>
+<rect x="70" y="510" width="500" height="160" rx="14" fill="#e8f5ef" stroke="#c7d4e2"/>
+<text x="92" y="553" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">6  推进处理水位</text>
+<text x="92" y="593" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">所有必要调用及发布成功后推进</text>
+<text x="92" y="626" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">失败保留重试机会</text>
+<text x="70" y="835" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">如果没有合格的新候选，提前结束；提案全部被合理拒绝，也属于成功处理。</text>
+<text x="70" y="885" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">部分模型调用失败时，可能已发布其余成功经验，但不推进整批水位；重试必须处理重复发布。</text>
+<text x="70" y="935" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">长期经验不是原始问答的替代品：原始经历用于溯源，提炼后的经验用于复用。</text>
+<text x="65" y="1125" font-family="Microsoft YaHei UI, sans-serif" font-size="20" font-weight="400" fill="#718198">Cognee 1.6.0 · 主流程示意 · 默认能力与可选能力见正文</text>
+</svg>

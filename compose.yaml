@@ -1,0 +1,68 @@
+x-runtime: &runtime
+  image: opencontext:local
+  build: .
+  environment: &runtime-env
+    DATABASE_URL: postgresql://oc_runtime:${OC_RUNTIME_PASSWORD:?set OC_RUNTIME_PASSWORD}@postgres:5432/opencontext
+    OC_FILES_DIR: /data/files
+    OC_ENABLE_MODELS: ${OC_ENABLE_MODELS:-false}
+    OC_MODEL_BASE_URL: ${OC_MODEL_BASE_URL:-}
+    OC_MODEL_API_KEY: ${OC_MODEL_API_KEY:-}
+    OC_EMBEDDING_MODEL: ${OC_EMBEDDING_MODEL:-}
+    OC_EMBEDDING_DIMENSION: ${OC_EMBEDDING_DIMENSION:-0}
+    OC_EXTRACTION_MODEL: ${OC_EXTRACTION_MODEL:-}
+  volumes:
+    - files:/data/files
+  depends_on:
+    init:
+      condition: service_completed_successfully
+  security_opt:
+    - no-new-privileges:true
+  cap_drop: [ALL]
+  mem_limit: 1g
+  pids_limit: 128
+  restart: unless-stopped
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+      POSTGRES_DB: opencontext
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U postgres -d opencontext"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+  init:
+    image: opencontext:local
+    build: .
+    environment:
+      DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@postgres:5432/opencontext
+      OC_RUNTIME_PASSWORD: ${OC_RUNTIME_PASSWORD:?set OC_RUNTIME_PASSWORD}
+    entrypoint: [/bin/sh, -ec]
+    command: ["opencontext runtime-setup"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+  api:
+    <<: *runtime
+    command: [api, --bind, "0.0.0.0:8080"]
+    ports: ["127.0.0.1:${OC_HTTP_PORT:-8080}:8080"]
+  worker:
+    <<: *runtime
+    command: [worker]
+  admin:
+    image: opencontext:local
+    profiles: [tools]
+    environment:
+      DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@postgres:5432/opencontext
+    depends_on:
+      init:
+        condition: service_completed_successfully
+
+volumes:
+  postgres:
+  files:

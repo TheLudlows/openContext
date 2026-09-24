@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1070" viewBox="0 0 1800 1070">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#66788f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="65" y="67" font-family="Microsoft YaHei UI, sans-serif" font-size="38" font-weight="700" fill="#20334b">知识库主流程：资料如何变成可追溯的证据</text>
+<text x="65" y="115" font-family="Microsoft YaHei UI, sans-serif" font-size="25" font-weight="400" fill="#5d7087">普通文本路径；结构化数据与代码有不同加工路径。</text>
+<polyline points="570,260 650,260" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1150,260 1230,260" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1480,340 1480,495" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1498" y="418" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">两路加工完成</text>
+<polyline points="1230,575 1150,575" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="650,575 570,575" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="180" width="500" height="160" rx="14" fill="#eef2f6" stroke="#c7d4e2"/>
+<text x="92" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">1  接收资料</text>
+<text x="92" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">确定用户、数据集与写权限</text>
+<text x="92" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">保存资料和导入记录</text>
+<rect x="650" y="180" width="500" height="160" rx="14" fill="#eaf2ff" stroke="#c7d4e2"/>
+<text x="672" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">2  解析与分块</text>
+<text x="672" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">提取正文，保留文档归属</text>
+<text x="672" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">分块 ID 关联内容和重复次数</text>
+<rect x="1230" y="180" width="500" height="160" rx="14" fill="#f0ecff" stroke="#c7d4e2"/>
+<text x="1252" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">3  并行加工</text>
+<text x="1252" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">抽取实体与关系</text>
+<text x="1252" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">生成每个文本块的摘要</text>
+<rect x="1230" y="495" width="500" height="160" rx="14" fill="#eaf2ff" stroke="#c7d4e2"/>
+<text x="1252" y="538" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">4  组织知识</text>
+<text x="1252" y="578" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">合并身份，建立关系与来源</text>
+<text x="1252" y="611" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">保留原文、摘要、实体的连接</text>
+<rect x="650" y="495" width="500" height="160" rx="14" fill="#e8f5ef" stroke="#c7d4e2"/>
+<text x="672" y="538" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">5  持久化与索引</text>
+<text x="672" y="578" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">先写图及来源，再写对应向量</text>
+<text x="672" y="611" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">按文本、摘要、名称、事实分索引</text>
+<rect x="70" y="495" width="500" height="160" rx="14" fill="#e8f5ef" stroke="#c7d4e2"/>
+<text x="92" y="538" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">6  知识可检索</text>
+<text x="92" y="578" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">返回运行结果；失败可追踪</text>
+<text x="92" y="611" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">检索时回到原文与关系证据</text>
+<text x="70" y="785" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">抽取图保留“谁与谁有什么关系”；摘要提供另一种语义入口；原文提供可核查证据。</text>
+<text x="70" y="835" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">同一事实可以被多份资料共同支持。删除一份资料时，应撤销其来源归属，保留其他资料仍支持的事实。</text>
+<text x="70" y="885" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">复刻重点：可重试的任务状态、稳定身份、共享来源、多路检索，而不仅是调用一次 LLM。</text>
+<text x="65" y="1045" font-family="Microsoft YaHei UI, sans-serif" font-size="20" font-weight="400" fill="#718198">Cognee 1.6.0 · 主流程示意 · 默认能力与可选能力见正文</text>
+</svg>

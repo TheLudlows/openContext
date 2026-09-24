@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1150" viewBox="0 0 1800 1150">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#66788f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="65" y="67" font-family="Microsoft YaHei UI, sans-serif" font-size="38" font-weight="700" fill="#20334b">知识组织：同一份资料形成多个互补视图</text>
+<text x="65" y="115" font-family="Microsoft YaHei UI, sans-serif" font-size="25" font-weight="400" fill="#5d7087">这是概念模型；每条派生事实都需要能追溯到支持它的资料。</text>
+<polyline points="570,270 650,270" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="581" y="253" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">拆分</text>
+<polyline points="1230,270 1150,270" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1163" y="253" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">基于</text>
+<polyline points="820,350 820,550" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="840" y="447" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">片段提及</text>
+<polyline points="1040,350 1040,425 1480,425 1480,550" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1150,630 1230,630" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1155" y="606" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">维护方</text>
+<polyline points="570,630 650,630" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="582" y="607" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">支持</text>
+<rect x="70" y="190" width="500" height="160" rx="14" fill="#eef2f6" stroke="#c7d4e2"/>
+<text x="92" y="233" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">原始文档</text>
+<text x="92" y="273" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">例：Atlas 项目说明</text>
+<text x="92" y="306" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">来源、版本与访问范围</text>
+<rect x="650" y="190" width="500" height="160" rx="14" fill="#eaf2ff" stroke="#c7d4e2"/>
+<text x="672" y="233" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">原文片段</text>
+<text x="672" y="273" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">“Atlas 由支付团队维护”</text>
+<text x="672" y="306" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">保留原文与文档归属</text>
+<rect x="1230" y="190" width="500" height="160" rx="14" fill="#f0ecff" stroke="#c7d4e2"/>
+<text x="1252" y="233" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">片段摘要</text>
+<text x="1252" y="273" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">“Atlas 的维护团队是支付团队”</text>
+<text x="1252" y="306" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">帮助从另一种表达召回原文</text>
+<rect x="650" y="550" width="500" height="160" rx="14" fill="#eaf2ff" stroke="#c7d4e2"/>
+<text x="672" y="593" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">实体：Atlas</text>
+<text x="672" y="633" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">名称、类型、描述</text>
+<text x="672" y="666" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">可连接多个来源中的事实</text>
+<rect x="1230" y="550" width="500" height="160" rx="14" fill="#e8f5ef" stroke="#c7d4e2"/>
+<text x="1252" y="593" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">实体：支付团队</text>
+<text x="1252" y="633" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">名称、类型、描述</text>
+<text x="1252" y="666" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">与 Atlas 形成维护关系</text>
+<rect x="70" y="550" width="500" height="160" rx="14" fill="#fff4d9" stroke="#c7d4e2"/>
+<text x="92" y="593" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">来源归属</text>
+<text x="92" y="633" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">文档 A、文档 B 可以共同支持</text>
+<text x="92" y="666" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">删除 A 后仍保留 B 的支持</text>
+<text x="70" y="860" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">向量视图：原文文本、摘要文本、实体名称、完整事实句分别建立语义入口。</text>
+<text x="70" y="910" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">图视图：片段属于文档、摘要来自片段、片段提及实体、实体之间具有具体关系。</text>
+<text x="70" y="960" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">来源视图：记录哪个输入拥有哪个产物；它与“业务关系”用途不同，是删除与重试的基础。</text>
+<text x="65" y="1125" font-family="Microsoft YaHei UI, sans-serif" font-size="20" font-weight="400" fill="#718198">Cognee 1.6.0 · 主流程示意 · 默认能力与可选能力见正文</text>
+</svg>

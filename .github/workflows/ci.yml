@@ -1,0 +1,33 @@
+name: Rust and PostgreSQL
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg17
+        env:
+          POSTGRES_PASSWORD: ci-only-administrator-password
+          POSTGRES_DB: opencontext_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres -d opencontext_test"
+          --health-interval 3s --health-timeout 3s --health-retries 20
+    env:
+      DATABASE_URL: postgresql://postgres:ci-only-administrator-password@localhost:5432/opencontext_test
+      TEST_ADMIN_DATABASE_URL: postgresql://postgres:ci-only-administrator-password@localhost:5432/opencontext_test
+      TEST_DATABASE_URL: postgresql://oc_runtime:ci-only-runtime-password-32-characters@localhost:5432/opencontext_test
+      OC_RUNTIME_PASSWORD: ci-only-runtime-password-32-characters
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.96.0
+          components: rustfmt, clippy
+      - run: cargo fmt --all -- --check
+      - run: cargo clippy --locked --all-targets -- -D warnings
+      - run: cargo test --locked
+      - run: cargo run --locked -- runtime-setup
+      - run: cargo test --locked --test initialization -- --ignored
+      - run: cargo test --locked --test lifecycle -- --ignored
+      - run: cargo test --locked --test processes -- --ignored

@@ -1,0 +1,58 @@
+{
+  "source_commit": "663a2dc15d04bc0d7ec2733a2dd604b7ed1b8c8e",
+  "method": "Static source review plus AST-extracted pure function checks. No Cognee package import or end-to-end execution.",
+  "checks": [
+    {
+      "name": "content_chunk_identity",
+      "status": "passed",
+      "same_text_same_scope_stable": true,
+      "occurrence_and_document_distinct": true
+    },
+    {
+      "name": "feedback_ema",
+      "status": "passed",
+      "weights": [
+        0.55,
+        0.595,
+        0.5355
+      ]
+    },
+    {
+      "name": "hybrid_rrf",
+      "status": "passed",
+      "order": [
+        "B",
+        "C",
+        "A"
+      ],
+      "scores": {
+        "A": 0.03225806451612903,
+        "B": 0.0608294930875576,
+        "C": 0.04616477272727273
+      }
+    },
+    {
+      "name": "graph_triplet_scores",
+      "status": "passed",
+      "scores": [
+        1.35,
+        1.6800000000000002,
+        1.2000000000000002,
+        10.67
+      ],
+      "feedback_and_personal_scope": "feedback tested; personal influence disabled"
+    },
+    {
+      "name": "document_links_and_fences",
+      "status": "passed",
+      "links_checked": 106,
+      "documents": 3
+    }
+  ],
+  "referenced_source_files": 42,
+  "limitations": [
+    "No database/LLM integration tests",
+    "No competitor accuracy, latency or cost benchmark",
+    "Optional truth/personal weighting not executed"
+  ]
+}

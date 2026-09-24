@@ -1,0 +1,6 @@
+{"id":"release-cn","track":"retrieval","source":"生产发布必须经过审批","query":"发布审批","expected_contains":"生产发布必须经过审批","mode":"keyword"}
+{"id":"exact-code","track":"retrieval","source":"Runbook INC2026XYZ requires on-call approval.","query":"INC2026XYZ","expected_contains":"INC2026XYZ","mode":"keyword"}
+{"id":"candidate-hidden","track":"lifecycle","input":"下周也许可以取消发布审批","required_outcome":"candidate_excluded_from_search_and_get"}
+{"id":"conflicting-fact","track":"lifecycle","old":"需要审批","new":"无需审批","required_outcome":"old_remains_current_until_explicit_review"}
+{"id":"source-retracted","track":"lifecycle","required_outcome":"referencing_versions_hidden_and_no_late_republication"}
+{"id":"scope-isolation","track":"security","required_outcome":"no_cross_workspace_body_or_diagnostics"}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1090" viewBox="0 0 1800 1090">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#66788f"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="65" y="67" font-family="Microsoft YaHei UI, sans-serif" font-size="38" font-weight="700" fill="#20334b">删除与恢复：先判断谁还支持这条知识</text>
+<text x="65" y="115" font-family="Microsoft YaHei UI, sans-serif" font-size="25" font-weight="400" fill="#5d7087">共享知识不能随第一份文档一起删除；失败后仍应能定位待清理产物。</text>
+<polyline points="570,260 650,260" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1150,260 1230,260" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1175" y="241" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">有</text>
+<polyline points="900,340 900,418 1480,418 1480,510" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1035" y="402" font-family="Microsoft YaHei UI, sans-serif" font-size="22" font-weight="400" fill="#20334b">无其他来源</text>
+<polyline points="1230,590 1150,590" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="650,590 570,590" fill="none" stroke="#66788f" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="70" y="180" width="500" height="160" rx="14" fill="#eef2f6" stroke="#c7d4e2"/>
+<text x="92" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">1  撤回来源 A</text>
+<text x="92" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">查找 A 拥有的知识产物</text>
+<text x="92" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">区分共享产物与独占产物</text>
+<rect x="650" y="180" width="500" height="160" rx="14" fill="#eaf2ff" stroke="#c7d4e2"/>
+<text x="672" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">2  判断剩余支持</text>
+<text x="672" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">是否还有其他资料支持？</text>
+<text x="672" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">按共享 / 独占产物制定计划</text>
+<rect x="1230" y="180" width="500" height="160" rx="14" fill="#e8f5ef" stroke="#c7d4e2"/>
+<text x="1252" y="223" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">共享：保留知识</text>
+<text x="1252" y="263" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">只撤销 A 的来源归属</text>
+<text x="1252" y="296" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">B 的知识与检索能力继续存在</text>
+<rect x="1230" y="510" width="500" height="160" rx="14" fill="#fff4d9" stroke="#c7d4e2"/>
+<text x="1252" y="553" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">3  删除独占向量</text>
+<text x="1252" y="593" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">先移除可检索向量</text>
+<text x="1252" y="626" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">保留清理所需的产物快照</text>
+<rect x="650" y="510" width="500" height="160" rx="14" fill="#eaf2ff" stroke="#c7d4e2"/>
+<text x="672" y="553" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">4  清理图与派生索引</text>
+<text x="672" y="593" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">再移除独占节点、关系</text>
+<text x="672" y="626" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">共享事实索引需检查剩余引用</text>
+<rect x="70" y="510" width="500" height="160" rx="14" fill="#e8f5ef" stroke="#c7d4e2"/>
+<text x="92" y="553" font-family="Microsoft YaHei UI, sans-serif" font-size="29" font-weight="700" fill="#20334b">5  返回删除结果</text>
+<text x="92" y="593" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">记录实际删除的节点与边</text>
+<text x="92" y="626" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#20334b">供缓存失效和后续任务使用</text>
+<text x="70" y="805" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">写入通常先建立图与来源，再建向量；删除独占产物则先删向量，再删图。顺序服务于故障恢复。</text>
+<text x="70" y="855" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">这降低不一致风险，但不等同于跨库原子事务；多进程并发还需要数据库锁或租约。</text>
+<text x="70" y="905" font-family="Microsoft YaHei UI, sans-serif" font-size="24" font-weight="400" fill="#5d7087">失败分支：保留尚未完成清理的来源线索，重试时继续查找待删产物，避免形成孤立向量。</text>
+<text x="65" y="1065" font-family="Microsoft YaHei UI, sans-serif" font-size="20" font-weight="400" fill="#718198">Cognee 1.6.0 · 主流程示意 · 默认能力与可选能力见正文</text>
+</svg>

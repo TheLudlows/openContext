@@ -1,0 +1,43 @@
+[package]
+name = "opencontext"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Workspace-scoped knowledge and governed memory for enterprise agents"
+publish = false
+
+[dependencies]
+anyhow = "1"
+apalis = "0.7"
+apalis-sql = { version = "=0.7.4", default-features = false, features = ["postgres", "tokio-comp"] }
+axum = { version = "0.8", features = ["multipart"] }
+chrono = { version = "0.4", features = ["serde"] }
+clap = { version = "4", features = ["derive", "env"] }
+fs2 = "0.4"
+futures = "0.3"
+jieba-rs = "0.7"
+lopdf = { version = "0.38", default-features = false }
+pdf-extract = "0.10"
+pgvector = { version = "0.4", features = ["sqlx"] }
+pulldown-cmark = "0.13"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+rmcp = { version = "0.8", features = ["server", "transport-io"] }
+schemars = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+sqlx = { version = "0.8", default-features = false, features = ["runtime-tokio", "tls-rustls", "postgres", "sqlite", "uuid", "chrono", "json", "macros"] }
+thiserror = "2"
+tokio = { version = "1", features = ["full"] }
+tower-http = { version = "0.6", features = ["trace", "request-id", "limit"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+
+[dev-dependencies]
+tempfile = "3"
+tower = { version = "0.5", features = ["util"] }
+
+[profile.release]
+lto = "thin"
+strip = true
